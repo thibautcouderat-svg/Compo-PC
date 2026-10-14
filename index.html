@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark" data-fx="full">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mon PC - Configuration</title>
+<title>Ma configuration PC - i5-12400F, RTX 3060 Ti, 64 Go DDR4</title>
+<meta name="description" content="Ma configuration PC gaming : composants, prix d'achat, fiches techniques, planificateur d'upgrade et performances.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237c5cff'/%3E%3Cpath d='M8 22V10h8a4 4 0 010 8h-4' stroke='%2322d3ee' stroke-width='3' fill='none'/%3E%3C/svg%3E">
 <style>
 @property --ang{syntax:"<angle>";inherits:false;initial-value:0deg}
 :root{--bg:#07080d;--card:#10131b;--line:#232a3a;--txt:#eef1f8;--mut:#8a93aa;--a1:#7c5cff;--a2:#22d3ee;--a3:#f472b6}
@@ -95,6 +97,61 @@ a.lnk:hover{background-size:100% 1px;letter-spacing:.03em}
 .empty{color:var(--mut);padding:40px;text-align:center}
 footer{margin-top:50px;text-align:center;color:var(--mut);font-size:.85rem}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+:focus-visible{outline:2px solid var(--a2);outline-offset:2px}
+section{scroll-margin-top:60px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.nav{position:sticky;top:0;z-index:60;display:flex;flex-wrap:wrap;align-items:center;gap:4px;padding:8px 20px;background:rgba(7,8,13,.8);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav a{color:var(--mut);text-decoration:none;padding:6px 12px;border-radius:8px;font-size:.88rem}
+.nav a:hover{color:var(--txt);background:var(--line)}.nav .btn{margin-left:auto}
+.btn{display:inline-block;padding:9px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--txt);cursor:pointer;font:inherit;font-size:.88rem;text-decoration:none;transition:border-color .2s}
+.btn:hover{border-color:var(--a2)}.btn.pri{background:linear-gradient(90deg,var(--a1),var(--a2));border-color:transparent;color:#fff}
+.f{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--txt);font:inherit}.f.s{width:110px}
+.bar{display:flex;flex-wrap:wrap;gap:10px}.bar input{flex:1;min-width:200px;width:auto}.bar .f{width:auto}
+.panel{margin-top:44px;padding:26px;border-radius:20px;background:var(--card);border:1px solid var(--line)}
+.panel h2{font-size:1.5rem;margin-bottom:6px}.note{color:var(--mut);font-size:.88rem;margin-bottom:14px}
+.vgrid,.sums,.gg{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+.kpi{padding:16px;border-radius:14px;border:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.kpi small{color:var(--mut);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em}.kpi b{font-size:1.6rem}.neg{color:var(--a3)}
+.split{display:flex;flex-wrap:wrap;gap:28px;align-items:center;margin-top:22px}
+.donut{width:170px;height:170px;border-radius:50%;background:var(--line);-webkit-mask:radial-gradient(circle,transparent 52%,#000 53%);mask:radial-gradient(circle,transparent 52%,#000 53%)}
+.leg{list-style:none;padding:0;flex:1;min-width:240px;display:grid;gap:8px}
+.leg li{display:grid;grid-template-columns:14px 1fr auto 52px;gap:10px;align-items:center;font-size:.92rem}
+.leg i{width:12px;height:12px;border-radius:3px}.leg em{color:var(--mut);font-style:normal;text-align:right}
+.frm{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-bottom:16px;align-items:end}
+.frm label,.dl label{display:grid;gap:4px;color:var(--mut);font-size:.85rem}
+.items{list-style:none;padding:0;display:grid;gap:10px;margin:16px 0}
+.items li{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:12px;border:1px solid var(--line);border-radius:12px}
+.items li>div{flex:1;min-width:180px}.items small{display:block;color:var(--mut)}
+.bd{padding:3px 10px;border-radius:999px;font-size:.75rem;font-weight:700;border:1px solid}
+.bd.ok{color:#34d399}.bd.ko{color:#f87171}.bd.vr{color:#fbbf24}
+.gc{padding:16px;border:1px solid var(--line);border-radius:14px;display:flex;flex-direction:column;gap:10px}
+.rr{display:grid;gap:6px;padding-bottom:10px;border-bottom:1px solid var(--line)}.rh{display:flex;justify-content:space-between;align-items:center}
+.pb{height:8px;border-radius:8px;background:var(--line);overflow:hidden}.pb i{display:block;height:100%;background:var(--a2);border-radius:8px}
+.pb.estimation i{background:repeating-linear-gradient(45deg,var(--a1) 0 6px,transparent 6px 10px)}.pb.low i{background:var(--a3)}
+.row{display:flex;flex-wrap:wrap;gap:8px}
+.gal{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
+.gal figure{position:relative;aspect-ratio:4/3;border-radius:14px;overflow:hidden;border:1px dashed var(--line);display:grid}
+.gal img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0}
+.gal figure.ok{cursor:zoom-in;border-style:solid}.gal figure.ok img{opacity:1}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:10px 14px;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;font-size:.9rem}
+.gal .ph{display:grid;place-content:center;text-align:center;color:var(--mut);padding:14px;font-size:.85rem}.gal figure.ok .ph{display:none}
+dialog{border:1px solid var(--line);border-radius:18px;background:var(--card);color:var(--txt);padding:0;width:min(94vw,640px);max-height:88vh}
+dialog::backdrop{background:rgba(0,0,0,.65);backdrop-filter:blur(4px)}
+body:has(dialog[open]){overflow:hidden}
+.dl{padding:22px;display:grid;gap:14px}.dl header,.dl footer{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.dl dl{display:grid;grid-template-columns:auto 1fr;gap:8px 18px}.dl dt{color:var(--mut)}.dl dd{margin:0}
+.big{width:100%;max-height:66vh;object-fit:contain;border-radius:10px}#lb{width:min(96vw,1000px)}
+#toast{position:fixed;left:50%;bottom:24px;translate:-50% 20px;opacity:0;padding:10px 18px;border-radius:10px;background:var(--a1);color:#fff;z-index:200;pointer-events:none;transition:.3s}#toast.on{opacity:1;translate:-50% 0}
+.more{align-self:flex-start;margin-top:4px}
+html[data-theme=light]{--bg:#f3f4f9;--card:#fff;--line:#d9deea;--txt:#141826;--mut:#566078;--a1:#6a47f0;--a2:#0891b2;--a3:#db2777}
+html[data-theme=light] :is(.stat,.chip,.marquee,.nav,.bar input){background:rgba(255,255,255,.88)}
+html[data-theme=light] .stat b{background:linear-gradient(90deg,var(--txt),var(--a2));-webkit-background-clip:text;background-clip:text}
+html[data-theme=light] .blobs i{opacity:.16}html[data-theme=light] body::after{display:none}
+html[data-theme=light] #cur{opacity:.5}
+html[data-fx=off] *,html[data-fx=off] *::before,html[data-fx=off] *::after{animation:none!important;transition:none!important}
+html[data-fx=off] :is(#net,.blobs,#cur),html[data-fx=low] :is(#net,#cur){display:none}
+html[data-fx=low] :is(.blobs i,.track,h1,h1::before,h1::after,.chip.on,.pbar b,.card::before,.tag::before,.orb i,.sub::after){animation:none}
 </style>
 </head>
 <body>
@@ -102,6 +159,7 @@ footer{margin-top:50px;text-align:center;color:var(--mut);font-size:.85rem}
 <div class="blobs"><i></i><i></i><i></i></div>
 <div id="pg"></div>
 <div id="cur"></div>
+<nav class="nav" aria-label="Sections"><a href="#grid">Composants</a><a href="#valeur">Valeur</a><a href="#upgrade">Upgrade</a><a href="#perf">Performances</a><a href="#galerie">Galerie</a><button class="btn" id="pbtn">Préférences</button></nav>
 
 <header class="hero">
   <div class="orb"><i></i><i></i><i></i></div>
@@ -113,10 +171,15 @@ footer{margin-top:50px;text-align:center;color:var(--mut);font-size:.85rem}
 
 <main class="wrap">
   <div class="stats" id="stats"></div>
-  <div class="bar"><input id="q" type="search" placeholder="Rechercher un composant, une marque..."></div>
+  <div class="bar"><label class="sr" for="q">Rechercher</label><input id="q" type="search" placeholder="Rechercher un composant, une marque...">
+<label class="sr" for="sort">Trier</label><select class="f" id="sort"><option value="def">Ordre d'origine</option><option value="pa">Prix croissant</option><option value="pd">Prix décroissant</option><option value="nom">Nom</option><option value="cat">Catégorie</option><option value="date">Date d'achat</option></select><button class="btn" id="rf">Réinitialiser les filtres</button></div>
   <div class="chips" id="chips"></div>
   <div class="grid" id="grid"></div>
-  <footer>Derniere mise a jour : <span id="upd"></span></footer>
+  <section class="panel" id="valeur" aria-labelledby="h1v"><h2 id="h1v">Valeur de la configuration</h2><p class="note">Prix d'achat historiques, jamais présentés comme des prix actuels.</p><div id="val"></div></section>
+  <section class="panel" id="upgrade" aria-labelledby="h1u"><h2 id="h1u">Planificateur d'upgrade</h2><p class="note">Simulation uniquement, aucun achat. Données gardées dans ce navigateur.</p><div id="plan"></div></section>
+  <section class="panel" id="perf" aria-labelledby="h1p"><h2 id="h1p">Performances gaming</h2><div id="perfBox"></div></section>
+  <section class="panel" id="galerie" aria-labelledby="h1g"><h2 id="h1g">Mon setup en images</h2><p class="note">Dépose tes photos dans le dossier img/ avec les noms indiques.</p><div class="gal" id="gal"></div></section>
+  <footer>Dernière mise à jour : <span id="upd"></span></footer>
 </main>
 
 <script>
@@ -127,7 +190,7 @@ footer{margin-top:50px;text-align:center;color:var(--mut);font-size:.85rem}
    prix : nombre (ex: 140) ou null si inconnu.
    ============================================================ */
 const PARTS = [
-  {cat:"Cœur du PC", composant:"Carte mère", modele:"PRIME B760-PLUS D4", specs:"ATX, DDR4", date:"6 mai 2026", url:"https://www.amazon.fr/dp/B0BNQDVLGN", prix:140},
+  {cat:"Cœur du PC", composant:"Carte mère", modele:"ASUS PRIME B760-PLUS D4", specs:"ATX, DDR4", date:"6 mai 2026", url:"https://www.amazon.fr/dp/B0BNQDVLGN", prix:140},
   {cat:"Cœur du PC", composant:"Processeur", modele:"Intel Core™ i5-12400F", specs:"8 Mo de cache, jusqu'à 4,40 GHz", date:"6 mai 2026", url:"https://www.amazon.fr/dp/B09NPJRDGD", prix:179.99},
   {cat:"Cœur du PC", composant:"RAM", modele:"Corsair Vengeance RGB Pro 64 Go (2x32 Go) DDR4 3600", specs:"DDR4, 64 Go (2x32 Go), 3600 MHz, CAS 18, RGB, PC4-28800", date:"10 décembre 2023", url:"https://www.amazon.fr/dp/B081BTFN1B", prix:189.53},
   {cat:"Cœur du PC", composant:"Carte graphique", modele:"KFA2 GeForce RTX 3060 Ti", specs:"NVIDIA RTX 3060 Ti, 8 Go GDDR6, LHR, PCIe 4.0, refroidissement double ventilateur", date:"16 mai 2023", url:"https://www.amazon.fr/dp/B0BNL4LV1H", prix:333.09},
@@ -144,8 +207,8 @@ const PARTS = [
   {cat:"Périphériques", composant:"Casque", modele:"Razer Kraken V3", specs:"USB filaire, Chroma RGB, haut-parleurs TriForce 50 mm, son spatial THX, micro cardioïde HyperClear amovible, noir", date:"5 décembre 2025", url:"https://www.amazon.fr/dp/B09D439KLX", prix:69.99},
 
   {cat:"Écrans", composant:"Écran 1", modele:"TCL 24G645 QD-Mini LED", specs:"24\", 300 Hz, Full HD, noir et gris", date:"11 janvier 2026", url:"https://www.fnac.com/Ecran-PC-gaming-QD-Mini-LED-Tcl-24G645-24-300-Hz-Full-HD-Noir-et-Gris/a21582322/w-4", prix:249.99},
-  {cat:"Écrans", composant:"Écran 2", modele:"PGM 270", specs:"144 Hz", date:"Il y a bien longtemps", url:"", lienTexte:"Pas de lien", prix:null},
-  {cat:"Écrans", composant:"Écran 3", modele:"HP", specs:"60 Hz", date:"Il y a bien longtemps", url:"", lienTexte:"Pas de lien", prix:null},
+  {cat:"Écrans", composant:"Écran 2", modele:"Fox Spirit PGM270", specs:"144 Hz", date:"Il y a bien longtemps", url:"", lienTexte:"Pas de lien", prix:null},
+  {cat:"Écrans", composant:"Écran 3", modele:"HP LE1901w", specs:"60 Hz", date:"Il y a bien longtemps", url:"", lienTexte:"Pas de lien", prix:null},
 ];
 const LAST_UPDATE = "14 octobre 2026";
 
@@ -165,18 +228,21 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return
   const s=el.querySelector("b[data-s]");if(s)scramble(s,s.dataset.s)}),{threshold:.15});
 
 /* ---------- hero : machine a ecrire ---------- */
-(function(){const w=["Intel Core i5-12400F","NVIDIA RTX 3060 Ti","64 Go de DDR4 RGB","3 ecrans dont un 300 Hz","Alimentation 1000 W modulaire"],el=$("type");let i=0,j=0,del=false;
+(function(){const w=["Intel Core i5-12400F","NVIDIA RTX 3060 Ti","64 Go de DDR4 RGB","3 écrans dont un 300 Hz","Alimentation 1000 W modulaire"],el=$("type");let i=0,j=0,del=false;
 (function tick(){const s=w[i];el.textContent=s.slice(0,j);if(!del&&j===s.length){del=true;return setTimeout(tick,1600)}if(del&&j===0){del=false;i=(i+1)%w.length}j+=del?-1:1;setTimeout(tick,del?28:65)})()})();
 
 /* ---------- bandeau defilant ---------- */
 $("track").innerHTML=[...PARTS,...PARTS].map(p=>`<span>${esc(p.modele)}</span>`).join("");
 
 /* ---------- stats ---------- */
-(function(){const total=PARTS.reduce((s,p)=>s+(p.prix||0),0),known=PARTS.filter(p=>p.prix!=null).length;
-const S=[{n:PARTS.length,f:"int",l:"composants"},{n:total,f:"eur",l:`valeur connue (${known}/${PARTS.length} prix)`},{s:"i5-12400F",l:"processeur"},{s:"RTX 3060 Ti",l:"carte graphique"},{s:"64 Go DDR4",l:"memoire vive"}];
+(function(){const S=[{n:PARTS.length,f:"int",l:"composants"},{s:"i5-12400F",l:"processeur"},{s:"RTX 3060 Ti",l:"carte graphique"},{s:"64 Go DDR4",l:"mémoire vive"}];
 $("stats").innerHTML=S.map((x,i)=>`<div class="stat" style="transition-delay:${i*90}ms"><b ${x.s?`data-s="${x.s}"`:`data-n="${x.n}" data-f="${x.f}"`}>&nbsp;</b><span>${esc(x.l)}</span></div>`).join("");
 document.querySelectorAll(".stat").forEach(e=>io.observe(e))})();
 
+const MO={janvier:0,"février":1,mars:2,avril:3,mai:4,juin:5,juillet:6,"août":7,septembre:8,octobre:9,novembre:10,"décembre":11};
+function pdate(s){const m=/(\d{1,2})\s+(\S+)\s+(\d{4})/.exec(s||"");const k=m&&m[2].toLowerCase();return m&&k in MO?new Date(+m[3],MO[k],+m[1]).getTime():null}
+const CMP={def:()=>0,pa:(a,b)=>(a.prix??1e9)-(b.prix??1e9),pd:(a,b)=>(b.prix??-1)-(a.prix??-1),nom:(a,b)=>a.modele.localeCompare(b.modele,"fr"),cat:(a,b)=>a.cat.localeCompare(b.cat,"fr"),date:(a,b)=>(pdate(b.date)??-1)-(pdate(a.date)??-1)};
+let sortBy="def";
 /* ---------- filtres ---------- */
 function chips(){$("chips").innerHTML=cats.map(c=>`<button class="chip ${c===cat?"on":""}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
 $("chips").querySelectorAll(".chip").forEach(b=>b.onclick=e=>{
@@ -187,16 +253,16 @@ $("chips").querySelectorAll(".chip").forEach(b=>b.onclick=e=>{
 /* ---------- cartes ---------- */
 function render(){
   const q=$("q").value.trim().toLowerCase();
-  const list=PARTS.map((p,i)=>({p,i})).filter(({p})=>(cat==="Tout"||p.cat===cat)&&(!q||[p.composant,p.modele,p.specs,p.date].join(" ").toLowerCase().includes(q)));
-  if(!list.length){$("grid").innerHTML=`<div class="empty">Aucun resultat.</div>`;return}
+  const list=PARTS.map((p,i)=>({p,i})).filter(({p})=>(cat==="Tout"||p.cat===cat)&&(!q||[p.composant,p.modele,p.specs,p.date].join(" ").toLowerCase().includes(q))).sort((x,y)=>CMP[sortBy](x.p,y.p));
+  if(!list.length){$("grid").innerHTML=`<div class="empty">Aucun résultat.</div>`;return}
   $("grid").innerHTML=list.map(({p,i},k)=>{
-    const link=p.url?`<a class="lnk" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">Voir le produit &#8599;</a>${p.lienTexte?` <span class="na">(${esc(p.lienTexte.toLowerCase())})</span>`:""}`:`<span class="na">${esc(p.lienTexte||"Lien a ajouter")}</span>`;
+    const link=p.url?`<a class="lnk" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">Voir le produit &#8599;</a>${p.lienTexte?` <span class="na">(${esc(p.lienTexte.toLowerCase())})</span>`:""}`:`<span class="na">${esc(p.lienTexte||"Lien à ajouter")}</span>`;
     return `<article class="card" style="--d:${(k%3)*110}ms;--w:${p.prix?Math.max(6,p.prix/maxP*100):0}%">
       <span class="idx">${String(i+1).padStart(2,"0")}</span>
       <span class="tag">${esc(p.composant)}</span>
       <div class="name">${esc(p.modele)}</div>
       <div class="det">${esc(p.specs)}</div>
-      <div class="pbar"><b></b></div>
+      <div class="pbar"><b></b></div><button class="btn more" data-i="${i}">Voir la fiche</button>
       <div class="meta"><div><small>Achat</small>${esc(p.date)}</div><div><small>Prix</small><span class="price">${p.prix!=null?eur(p.prix):"Inconnu"}</span></div><div><small>Lien</small>${link}</div></div>
     </article>`}).join("");
   document.querySelectorAll(".card").forEach(c=>{io.observe(c);
@@ -219,7 +285,7 @@ addEventListener("mousemove",e=>{tx=e.clientX;ty=e.clientY});
 function rs(){W=c.width=innerWidth;H=c.height=innerHeight;P=Array.from({length:Math.min(90,W*H/16000|0)},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4}))}
 addEventListener("resize",rs);addEventListener("mousemove",e=>{m.x=e.clientX;m.y=e.clientY});rs();
 function line(a,b,x2,y2,col){g.strokeStyle=col;g.beginPath();g.moveTo(a,b);g.lineTo(x2,y2);g.stroke()}
-(function loop(){g.clearRect(0,0,W,H);
+(function loop(){if(document.hidden||document.documentElement.dataset.fx!=="full"){setTimeout(loop,400);return}g.clearRect(0,0,W,H);
   for(const p of P){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;g.fillStyle="rgba(34,211,238,.7)";g.beginPath();g.arc(p.x,p.y,1.5,0,6.3);g.fill()}
   for(let i=0;i<P.length;i++){const a=P[i];
     for(let j=i+1;j<P.length;j++){const b=P[j],dx=a.x-b.x,dy=a.y-b.y,d=dx*dx+dy*dy;if(d<14000)line(a.x,a.y,b.x,b.y,`rgba(124,92,255,${.3*(1-d/14000)})`)}
@@ -228,6 +294,94 @@ function line(a,b,x2,y2,col){g.strokeStyle=col;g.beginPath();g.moveTo(a,b);g.lin
 
 $("upd").textContent=LAST_UPDATE;
 chips();render();
+</script>
+<dialog id="dlg" aria-labelledby="dt"></dialog><dialog id="prefs" aria-labelledby="pt"></dialog><dialog id="lb" aria-label="Galerie"></dialog><div id="toast" role="status" aria-live="polite"></div>
+<script>
+const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch{return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch{}}};
+const root=document.documentElement,E=esc,money=eur;
+const BR={"Carte mère":"ASUS","Processeur":"Intel","RAM":"Corsair","Carte graphique":"KFA2","Stockage HDD":"Seagate","Stockage SSD":"Kingston","Alimentation":"Corsair","Ventilateurs":"Corsair","Boîtier":"Aerocool","Souris":"Razer","Clavier":"Trust","Casque":"Razer","Écran 1":"TCL","Écran 2":"Fox Spirit","Écran 3":"HP"};
+const toast=m=>{const t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove("on"),1800)};
+const copy=async x=>{try{await navigator.clipboard.writeText(x)}catch{const a=document.createElement("textarea");a.value=x;document.body.append(a);a.select();document.execCommand("copy");a.remove()}toast("Copié dans le presse-papiers")};
+const save=(n,t,x)=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([x],{type:t}));a.download=n;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)};
+document.addEventListener("click",e=>{const x=e.target.closest("[data-x]");if(x)x.closest("dialog").close();else if(e.target.tagName==="DIALOG")e.target.close()});
+
+/* préférences */
+const pref=store.get("prefs",{theme:"dark",fx:"full"});
+function applyPrefs(){root.dataset.theme=pref.theme;root.dataset.fx=calm&&pref.fx==="full"?"low":pref.fx;store.set("prefs",pref)}
+function openPrefs(){const d=$("prefs");d.innerHTML=`<div class="dl"><header><h3 id="pt">Préférences</h3><button class="btn" data-x>Fermer</button></header>
+<label>Thème<select class="f" id="pth"><option value="dark">Sombre</option><option value="light">Clair</option></select></label>
+<label>Effets visuels et animations<select class="f" id="pfx"><option value="full">Complets</option><option value="low">Réduits</option><option value="off">Désactivés</option></select></label>
+<div class="row"><button class="btn" data-j>Exporter en JSON</button><button class="btn" data-c>Exporter en CSV</button></div>
+<button class="btn" data-r>Effacer mes données locales</button></div>`;
+$("pth").value=pref.theme;$("pfx").value=pref.fx;
+$("pth").onchange=e=>{pref.theme=e.target.value;applyPrefs()};$("pfx").onchange=e=>{pref.fx=e.target.value;applyPrefs()};
+d.querySelector("[data-j]").onclick=()=>save("ma-config-pc.json","application/json",JSON.stringify({exporte_le:new Date().toISOString(),composants:PARTS},null,2));
+d.querySelector("[data-c]").onclick=()=>{const q=v=>`"${String(v??"").replace(/"/g,'""')}"`;
+ save("ma-config-pc.csv","text/csv;charset=utf-8","\ufeff"+[["Catégorie","Composant","Modèle","Caractéristiques","Date d'achat","Prix d'achat (€)","Lien"],...PARTS.map(p=>[p.cat,p.composant,p.modele,p.specs,p.date,p.prix==null?"":String(p.prix).replace(".",","),p.url])].map(r=>r.map(q).join(";")).join("\r\n"))};
+d.querySelector("[data-r]").onclick=()=>{if(confirm("Effacer préférences, estimation, upgrades et résultats gaming ?")){["prefs","used","plan","perf"].forEach(k=>{try{localStorage.removeItem(k)}catch{}});location.reload()}};
+d.showModal()}
+$("pbtn").onclick=openPrefs;applyPrefs();
+$("sort").onchange=e=>{sortBy=e.target.value;render()};
+$("rf").onclick=()=>{$("q").value="";cat="Tout";sortBy="def";$("sort").value="def";chips();render()};
+
+/* fiche détaillée */
+function openPart(i){const p=PARTS[i],d=$("dlg");
+ const rows=[["Catégorie",p.cat],["Marque",BR[p.composant]||"Non renseignée"],["Modèle",p.modele],["Caractéristiques",p.specs],["Date d'achat",p.date||"Non renseignée"],["Prix d'achat",p.prix!=null?money(p.prix):"Non renseigné"]];
+ d.innerHTML=`<div class="dl"><header><h3 id="dt">${E(p.composant)}</h3><button class="btn" data-x>Fermer la fiche</button></header>${p.img?`<img class="big" src="${E(p.img)}" alt="${E(p.modele)}" loading="lazy">`:""}<dl>${rows.map(([a,b])=>`<dt>${E(a)}</dt><dd>${E(b)}</dd>`).join("")}</dl><footer>${p.url?`<a class="btn" href="${E(p.url)}" target="_blank" rel="noopener noreferrer">Fiche produit</a>`:`<span class="na">Lien non renseigné</span>`}<button class="btn pri" data-cp>Copier les spécifications</button></footer></div>`;
+ d.querySelector("[data-cp]").onclick=()=>copy(rows.map(([a,b])=>`${a} : ${b}`).join("\n"));d.showModal()}
+$("grid").addEventListener("click",e=>{const b=e.target.closest(".more");if(b)openPart(+b.dataset.i)});
+
+/* valeur */
+const COL=["#7c5cff","#22d3ee","#f472b6","#fbbf24","#34d399"];
+function initVal(){$("val").innerHTML=`<div class="vgrid"><div class="kpi"><small>Total des prix d'achat renseignés</small><b id="vt"></b><span id="vn"></span></div><div class="kpi"><small>Estimation d'occasion actuelle (€)</small><label class="sr" for="used">Estimation en euros</label><input class="f" id="used" type="number" min="0" step="1" placeholder="Estimation à renseigner"><span id="vd"></span></div></div><div class="split"><div class="donut" id="dn" role="img" aria-label="Répartition du budget par catégorie"></div><ul class="leg" id="lg"></ul></div>`;
+ $("used").value=store.get("used","");$("used").oninput=e=>{store.set("used",e.target.value);updVal()};updVal()}
+function updVal(){const k=PARTS.filter(p=>p.prix!=null),t=k.reduce((s,p)=>s+p.prix,0),m=PARTS.length-k.length,u=$("used").value;
+ $("vt").textContent=money(t);$("vn").textContent=`Total partiel : ${k.length} prix connus, ${m} manquants (exclus).`;
+ $("vd").textContent=u===""?"Estimation à renseigner":`Écart estimation - total partiel : ${money(+u-t)}`;
+ const by={};k.forEach(p=>by[p.cat]=(by[p.cat]||0)+p.prix);const rows=Object.entries(by).sort((a,b)=>b[1]-a[1]);let a=0;
+ $("dn").style.background=rows.length&&t?`conic-gradient(${rows.map(([,v],i)=>{const s=a;a+=v/t*100;return `${COL[i%5]} ${s}% ${a}%`}).join(",")})`:"";
+ $("lg").innerHTML=rows.map(([c,v],i)=>`<li><i style="background:${COL[i%5]}"></i><span>${E(c)}</span><b>${money(v)}</b><em>${t?(v/t*100).toFixed(0):0} %</em></li>`).join("")}
+
+/* upgrade */
+const SC=["A","B","C"],plan=store.get("plan",{budget:0,items:[]});
+function compat(it){const n=it.name.toLowerCase(),c=it.cat;
+ if(c==="RAM"){if(/ddr[35]\b/.test(n))return["Incompatible","Carte mère DDR4 uniquement"];if(/ddr4/.test(n))return["Compatible","DDR4 : OK (vérifie fréquence et nombre de barrettes)"]}
+ if(c==="Processeur"){if(/lga ?1700|i[3579]-1[234]\d{3}/.test(n))return["Compatible","Socket LGA1700 (version du BIOS à vérifier)"];if(/am[45]|lga ?(1200|1151|1851)|ryzen|core ultra/.test(n))return["Incompatible","Socket différent de LGA1700"]}
+ return["À vérifier","Données insuffisantes pour conclure"]}
+function savePlan(){store.set("plan",plan);renderPlan()}
+function renderPlan(){const b=+plan.budget||0;
+ const sums=SC.map(s=>{const l=plan.items.filter(i=>i.sc===s);return{s,n:l.length,t:l.reduce((a,i)=>a+i.price,0)}}).filter(x=>x.n);
+ $("pl").innerHTML=!plan.items.length?`<p class="empty">Aucune amélioration planifiée.</p>`:`<ul class="items">${plan.items.map((it,i)=>{const[st,why]=compat(it);return `<li><div><b>${E(it.cat)}</b> : ${E(it.name)}<small>Scénario ${it.sc} - ${E(why)}</small></div><label class="sr" for="ip${i}">Prix de ${E(it.name)}</label><input class="f s" id="ip${i}" type="number" min="0" step="1" value="${it.price}" data-e="${i}"><span class="bd ${st==="Compatible"?"ok":st==="Incompatible"?"ko":"vr"}">${st}</span><button class="btn" data-d="${i}">Retirer</button></li>`}).join("")}</ul><div class="sums">${sums.map(x=>{const r=b-x.t;return `<div class="kpi"><small>Scénario ${x.s}</small><b>${money(x.t)}</b><span class="${r<0&&b?"neg":""}">${b?(r>=0?`Reste ${money(r)}`:`Dépassement ${money(-r)}`):"Budget non défini"}</span></div>`}).join("")}</div>`}
+function initPlan(){const cs=[...new Set(PARTS.map(p=>p.composant))];
+ $("plan").innerHTML=`<form id="pf" class="frm"><label>Composant<select class="f" id="pc">${cs.map(c=>`<option>${E(c)}</option>`).join("")}</select></label><label>Envisagé<input class="f" id="pn" required maxlength="80" placeholder="ex : Ryzen 5 / DDR5"></label><label>Prix estimé (€)<input class="f" id="pp" type="number" min="0" step="1" required></label><label>Scénario<select class="f" id="ps">${SC.map(s=>`<option value="${s}">Scénario ${s}</option>`).join("")}</select></label><button class="btn pri">Ajouter</button></form><label class="frm">Budget maximum (€)<input class="f s" id="pbud" type="number" min="0" step="1" value="${plan.budget||""}"></label><div id="pl"></div><button class="btn" id="prst">Réinitialiser le planificateur</button>`;
+ $("pf").onsubmit=e=>{e.preventDefault();plan.items.push({cat:$("pc").value,name:$("pn").value.trim(),price:Math.max(0,+$("pp").value||0),sc:$("ps").value});e.target.reset();savePlan()};
+ $("pbud").oninput=e=>{plan.budget=+e.target.value||0;savePlan()};
+ $("pl").onchange=e=>{const i=e.target.dataset.e;if(i!=null){plan.items[i].price=Math.max(0,+e.target.value||0);savePlan()}};
+ $("pl").onclick=e=>{const i=e.target.dataset.d;if(i!=null){plan.items.splice(+i,1);savePlan()}};
+ $("prst").onclick=()=>{if(confirm("Effacer les améliorations planifiées ?")){plan.items=[];plan.budget=0;$("pbud").value="";savePlan()}};renderPlan()}
+
+/* performances gaming */
+const GAMES=["Valorant","Counter-Strike 2","Fortnite"];let perf=store.get("perf",[]),pedit=null;
+function renderPerf(){const mx=Math.max(1,...perf.map(r=>Math.max(r.avg||0,r.low||0)));
+ $("perfBox").innerHTML=`<p class="note">Résultats saisis par moi. Le site n'exécute ni ne simule aucun benchmark.</p><div class="gg">${GAMES.map(g=>{const rs=perf.filter(r=>r.game===g);return `<article class="gc"><h3>${E(g)}</h3>${rs.length?rs.map(r=>`<div class="rr"><div class="rh"><b>${r.avg??"-"} FPS moy.</b><span class="bd ${r.type==="mesure"?"ok":"vr"}">${r.type==="mesure"?"Mesuré":"Estimation"}</span></div>${r.avg!=null?`<div class="pb ${E(r.type)}"><i style="width:${r.avg/mx*100}%"></i></div>`:""}${r.low!=null?`<div class="pb low"><i style="width:${r.low/mx*100}%"></i></div><small>1 % low : ${r.low} FPS</small>`:""}<small>${[r.res,r.settings,r.date,r.cond].filter(Boolean).map(E).join(" - ")}</small><div class="row"><button class="btn" data-pe="${r.id}">Modifier</button><button class="btn" data-pd="${r.id}">Supprimer</button></div></div>`).join(""):`<p class="empty">Aucune mesure disponible.</p>`}<button class="btn pri" data-pa="${E(g)}">Ajouter un résultat</button></article>`}).join("")}</div><div id="pform"></div>`}
+function pform(g,r){r=r||{};$("pform").innerHTML=`<form id="pfm" class="frm" aria-label="Résultat de test"><label>Jeu<select class="f" name="game">${GAMES.map(x=>`<option${x===(r.game||g)?" selected":""}>${E(x)}</option>`).join("")}</select></label><label>FPS moyens<input class="f" name="avg" type="number" min="0" value="${r.avg??""}"></label><label>FPS 1 % low<input class="f" name="low" type="number" min="0" value="${r.low??""}"></label><label>Résolution<input class="f" name="res" maxlength="30" value="${E(r.res||"")}"></label><label>Réglages<input class="f" name="settings" maxlength="40" value="${E(r.settings||"")}"></label><label>Date du test<input class="f" name="date" type="date" value="${E(r.date||"")}"></label><label>Conditions<input class="f" name="cond" maxlength="80" value="${E(r.cond||"")}"></label><label>Type<select class="f" name="type"><option value="mesure"${r.type==="estimation"?"":" selected"}>Mesuré</option><option value="estimation"${r.type==="estimation"?" selected":""}>Estimation</option></select></label><button class="btn pri">Enregistrer</button><button type="button" class="btn" data-pc>Annuler</button></form>`;
+ $("pfm").onsubmit=e=>{e.preventDefault();const d=Object.fromEntries(new FormData(e.target)),n=v=>v===""?null:+v;
+  const rec={id:pedit||Date.now(),game:d.game,avg:n(d.avg),low:n(d.low),res:d.res.trim(),settings:d.settings.trim(),date:d.date,cond:d.cond.trim(),type:d.type};
+  if(rec.avg==null&&rec.low==null){toast("Renseigne les FPS moyens ou le 1 % low");return}
+  perf=pedit?perf.map(x=>x.id===pedit?rec:x):[...perf,rec];pedit=null;store.set("perf",perf);renderPerf()};
+ $("pfm").querySelector("[data-pc]").onclick=()=>{pedit=null;$("pform").innerHTML=""};$("pfm").scrollIntoView({block:"nearest"})}
+$("perfBox").onclick=e=>{const d=e.target.dataset;if(d.pa)pform(d.pa);if(d.pe){pedit=+d.pe;pform(null,perf.find(r=>r.id===pedit))}if(d.pd&&confirm("Supprimer ce résultat ?")){perf=perf.filter(r=>r.id!==+d.pd);store.set("perf",perf);renderPerf()}};
+
+/* galerie */
+const GAL=[["PC complet","img/pc-complet.jpg"],["Intérieur du boîtier","img/interieur.jpg"],["Carte graphique","img/gpu.jpg"],["Bureau et trois écrans","img/bureau.jpg"],["Périphériques gaming","img/peripheriques.jpg"]];
+$("gal").innerHTML=GAL.map(([t,f])=>`<figure><img loading="lazy" decoding="async" src="${f}" alt="${t} de mon setup" width="800" height="600"><figcaption>${t}</figcaption><div class="ph">Photo à ajouter : <code>${f}</code></div></figure>`).join("");
+document.querySelectorAll("#gal img").forEach(im=>{im.onload=()=>im.parentNode.classList.add("ok")});
+function lb(i){const ok=[...document.querySelectorAll("#gal figure.ok")];if(!ok.length)return;const n=(i+ok.length)%ok.length,im=ok[n].querySelector("img"),d=$("lb");
+ d.innerHTML=`<div class="dl"><header><h3>${E(ok[n].querySelector("figcaption").textContent)}</h3><button class="btn" data-x>Fermer</button></header><img class="big" src="${E(im.src)}" alt="${E(im.alt)}"><footer><button class="btn" data-p>Précédente</button><span>${n+1} / ${ok.length}</span><button class="btn" data-n>Suivante</button></footer></div>`;
+ d.querySelector("[data-p]").onclick=()=>lb(n-1);d.querySelector("[data-n]").onclick=()=>lb(n+1);d.onkeydown=e=>{if(e.key==="ArrowLeft")lb(n-1);if(e.key==="ArrowRight")lb(n+1)};if(!d.open)d.showModal()}
+$("gal").onclick=e=>{const f=e.target.closest("figure.ok");if(f)lb([...document.querySelectorAll("#gal figure.ok")].indexOf(f))};
+
+initVal();initPlan();renderPerf();
 </script>
 </body>
 </html>
